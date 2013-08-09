@@ -1,0 +1,45 @@
+dimensions 4
+max-ticks = 100
+use-particles: io
+
+particle: accumulator
+    adder
+    start 0, 0, 0, 0
+    trajectory 1, 0, 0, 0
+    radius 0.25 
+    path linear
+    speed 1
+
+particle: text1
+    container "Hello "
+    start 10 10 0 10
+    trajectory 0 -1 0 -1 
+    radius  0.25
+    path linear
+    speed 1
+
+particle: text2
+    container "world!"
+    start 20, -10, 20, 0
+    trajectory 0, 0.5, -1, 0
+    radius 0.25
+    path linear
+    speed 1
+
+particle: print
+    printer
+    start 0, 0, -30, -30
+    trajectory 1, 0, 1, 1
+    radius 0.25
+    path linear
+    speed 1
+
+particle: end
+    terminator
+    start 55, 0, 2, -1 
+    trajectory -0.75, 0, 0, 0
+    radius 4
+    path linear
+    speed 0.67 
+
+
